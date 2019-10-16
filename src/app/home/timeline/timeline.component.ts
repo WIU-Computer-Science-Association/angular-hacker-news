@@ -20,13 +20,17 @@ export class TimelineComponent implements OnInit, OnDestroy {
     this.paramSub = this.route.params.subscribe(
       (value: Params) => {
         this.timeline = value['timeline'];
-        this.hackernews.getTimeline(this.timeline).subscribe(
-          (response: number[]) => {
-            this.items = response;
-          }
-        );
+        this.loadItems();
       }
     )
+  }
+
+  loadItems() {
+    this.hackernews.getTimeline(this.timeline).subscribe(
+      (response: number[]) => {
+        this.items = response;
+      }
+    );
   }
 
   ngOnDestroy() {
