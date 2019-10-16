@@ -19,7 +19,6 @@ export class NewsItemComponent implements OnInit {
     this.itemSub = this.hackerNews.getItem(this.itemId).subscribe(
       (response: HackerNewsItem) => {
         this.item = response;
-        console.log(this.item);
       }
     );
   }

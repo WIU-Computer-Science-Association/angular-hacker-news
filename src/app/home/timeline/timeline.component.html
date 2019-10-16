@@ -1,2 +1,7 @@
-
-<app-news-item *ngFor="let item of items" [itemId]="item"></app-news-item>
+<div>
+  <ul>
+    <li *ngFor="let item of items" >
+      <app-news-item [itemId]="item"></app-news-item>
+    </li>
+  </ul>
+</div>
