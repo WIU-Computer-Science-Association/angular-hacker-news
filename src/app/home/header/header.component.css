@@ -23,12 +23,16 @@ li a {
   text-decoration: none;
 }
 
+li a:focus {
+  outline: none;
+}
+
 li a:hover {
   background-color: #111;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #006666;
 }
 
 
