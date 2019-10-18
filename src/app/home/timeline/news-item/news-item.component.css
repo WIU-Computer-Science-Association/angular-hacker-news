@@ -1,0 +1,19 @@
+a:link, a:visited {
+    background-color: #006666;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    overflow-wrap: normal;
+    border: #001a1a;
+    padding-left: 1em;
+}
+
+.container {
+    padding-top: 5px;
+}
+
+a:hover, a:active {
+    background-color: #009999;
+}

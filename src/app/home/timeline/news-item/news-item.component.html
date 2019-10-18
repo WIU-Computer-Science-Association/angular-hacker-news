@@ -1,5 +1,6 @@
-<div *ngIf="!!item">
-  <h3>{{ item.title }}</h3>
-  <a href="{{ item.url }}">link</a>
-  <p>Score: {{ item.score }}</p>
+<div *ngIf="!!item" class="container">
+  <a href="{{ item.url }}">
+    <h3>{{ item.title }}</h3>
+    <p>Score: {{ item.score }}</p>
+  </a>
 </div>
